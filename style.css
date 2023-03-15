@@ -1,303 +1,296 @@
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    margin: 0;
-    font-family: "Lucida Grande";
-}
+    body {
+        margin: 0;
+        font-family: "Lucida Grande";
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-.clear {
-    clear: both;
-}
+    .clear {
+        clear: both;
+    }
 
-.container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+    .container {
+        max-width: 1170px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
 
-.main-wrapper {
-    height: 400px;
-    position: relative;
-    width: 100%;
-    display: block;
-    margin: 65px auto 0;
-}
+    .main-wrapper {
+        height: 400px;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 65px auto 0;
+    }
 
-.main-wrapper p{
-    box-sizing: border-box;
-    width: 100%;
-    margin: 263px auto 0;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    background-color: rgba(80, 65, 65, 0.7);
-    border-radius: 5px;
-}
+    .main-wrapper p{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 263px auto 0;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        background-color: rgba(80, 65, 65, 0.7);
+        border-radius: 5px;
+    }
 
-.main-item {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.arrow{
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 12px;
-}
-.arrow-prev {
-    left: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(135deg);
-}
-.arrow-next {
-    right: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-}
+    .main-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 25px 50px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
 
-[id^= "item"] {
-    display: none;
-}
-.item-1 {
-    z-index: 2;
-    opacity: 1;
-    background: url(Img/apple.jpg);
-    background-size: cover;
-    background-position: 0 10px;
-}
-.item-2 {
-    background: url(Img/asus.jpg);
-    background-size: cover;
-    background-position: 0 -5px;
-}
-.item-3 {
-    background: url(Img/samsung.jpg);
-    background-size: cover;
-}
-.item-4 {
-    background: url(Img/xiaomi.jpg);
-    background-size: cover;
-}
+    .arrow{
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 12px;
+    }
 
-*:target ~ .item-1{
-    opacity: 0;
-}
-#item-1:target ~ .item-1 {
-    opacity: 1;
+    .arrow-prev {
+        left: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+    }
 
-}
-#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
-    z-index: 3;
-    opacity: 1;
-} 
+    .arrow-next {
+        right: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
 
-.top-wrapper {
-    padding: 180px 0 100px 0;
-    background-size: cover;
-    background-color: rgb(83, 114, 214);
-    color: black;
-    text-align: center;
-}
+    [id^= "item"] {
+        display: none;
+    }
 
-.top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
+    .item-1 {
+        z-index: 2;
+        opacity: 1;
+        background: url(Img/apple.jpg);
+        background-size: cover;
+        background-position: 0 10px;
+    }
 
-.top-wrapper p {
-    opacity: 0.7;
-    margin-bottom: 3px;
-}
+    .item-2 {
+        background: url(Img/asus.jpg);
+        background-size: cover;
+        background-position: 0 -5px;
+    }
 
-.btn-wrapper {
-    text-align: center;
-    margin: 20px 0;
-}
+    .item-3 {
+        background: url(Img/samsung.jpg);
+        background-size: cover;
+    }
 
-.btn-wrapper p {
-    margin: 10px 0;
-}
+    .item-4 {
+        background: url(Img/xiaomi.jpg);
+        background-size: cover;
+    }
 
-.btn {
-    padding: 12px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-    text-align: center;
-}
+    *:target ~ .item-1{
+        opacity: 0;
+    }
+    #item-1:target ~ .item-1 {
+        opacity: 1;
 
-.btn:hover {
-    opacity: 1;
-}
+    }
+    #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+        z-index: 3;
+        opacity: 1;
+    } 
 
-.fa {
-    margin-right: 5px;
-}
+    .top-wrapper {
+        padding: 180px 0 100px 0;
+        background-size: cover;
+        background-color: rgb(83, 114, 214);
+        color: black;
+        text-align: center;
+    }
 
-/**Header by pandu Setyawan Wiyoon**/
-header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(22, 16, 16, 0.637);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-}
+    .top-wrapper h1 {
+        opacity: 0.7;
+        font-size: 45px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
 
-.header-logo {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    float: left;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #eee;
-}
+    .top-wrapper p {
+        opacity: 0.7;
+        margin-bottom: 3px;
+    }
 
+    .btn-wrapper {
+        text-align: center;
+        margin: 20px 0;
+    }
 
-.header-left {
-    float: left;
-    transition: all 0.5s;
-}
+    .btn-wrapper p {
+        margin: 10px 0;
+    }
 
-.header-right {
-    float: right;
-    margin-right: -25px;
-}
+    .btn {
+        padding: 12px 24px;
+        color: white;
+        display: inline-block;
+        opacity: 0.8;
+        border-radius: 4px;
+        text-align: center;
+    }
 
-.header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-weight: 600;
-    float: left;
-    transition: all 0.5s;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    .btn:hover {
+        opacity: 1;
+    }
+
+    .fa {
+        margin-right: 5px;
+    }
+
+    /**Header by pandu Setyawan Wiyoon**/
+    header {
+        height: 65px;
+        width: 100%;
+        background-color: rgba(22, 16, 16, 0.637);
+        position :fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    .header-logo {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        float: left;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #eee;
     }
 
 
-.header-right a:hover {
-    background-color: rgba(231, 24, 24, 0.3);
-}
-/**Header by pandu Setyawan Wiyoon**/
+    .header-left {
+        float: left;
+        transition: all 0.5s;
+    }
 
-/* CSS untuk menu-icon */
-.menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-}
+    .header-right {
+        float: right;
+        margin-right: -25px;
+    }
+
+    .header-right a {
+        line-height: 65px;
+        padding: 0 25px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: 600;
+        float: left;
+        transition: all 0.5s;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
 
 
-.lesson-wrapper {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #36af40;
-    text-align: center;
-}
+    .header-right a:hover {
+        background-color: rgba(231, 24, 24, 0.3);
+    }
+    /**Header by pandu Setyawan Wiyoon**/
 
-.heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    color: #5f5d60;
-}
+    /* CSS untuk menu-icon */
+    .menu-icon {
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding: 21px 0;
+        display: none;
+    }
 
-.heading h2 {
-    font-weight: normal;
-}
+    .lesson-wrapper {
+        padding-bottom: 80px;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #36af40;
+        text-align: center;
+    }
 
-.lesson {
-    float: left;
-    width: 25%;
-}
+    .heading {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        color: #5f5d60;
+    }
 
-.lesson-icon {
-    position: relative;
-}
+    .heading h2 {
+        font-weight: normal;
+    }
 
-.lesson-icon p {
-    position: absolute;
-    top: 44%;
-    width: 100%;
-    color: white;
-}
+    .lesson {
+        float: left;
+        width: 25%;
+    }
 
-.text-contents {
-    width: 80%;
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 15px;
-    color: #b3aeb5;
-}
+    .lesson-icon {
+        position: relative;
+    }
 
-.heading h3 {
-    font-weight: normal;
-}
+    .lesson-icon p {
+        position: absolute;
+        top: 44%;
+        width: 100%;
+        color: white;
+    }
 
-.message-wrapper {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 80px;
-    text-align: center;
-}
+    .text-contents {
+        width: 80%;
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 15px;
+        color: #b3aeb5;
+    }
 
-.message {
-    padding: 15px 40px;
-    background-color: #5dca88;
-    cursor: pointer;
-    box-shadow: 0 7px #1a7940;
-}
+    .heading h3 {
+        font-weight: normal;
+    }
 
-.message:active {
+    .message-wrapper {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .message {
+        padding: 15px 40px;
+        background-color: #5dca88;
+        cursor: pointer;
+        box-shadow: 0 7px #1a7940;
+    }
+
+    .message:active {
     position: relative;
     top: 7px;
     box-shadow: none;
-}
-
-footer img {
-    width: 125px;
-}
-
-footer p {
-    color: #b3aeb5;
-    font-size: 12px;
-}
-
-footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
     }
-
+    
     /*CSS untuk FORM*/
-  .form {
+    .form {
         width: 100%;
         font-family: 'Open Sans', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        border-bottom: 1px solid #d9d9d9;
     }
+
     .form > .form-title {
         text-align: center;
         margin-bottom: 3rem;
@@ -308,6 +301,7 @@ footer {
         flex-direction: column;
         width: 25%;
         align-items: center;
+        margin-bottom: 12px;
     }
     
     .form-control{
@@ -334,4 +328,34 @@ footer {
         background-color: #4CAF50;
         color:white;
         border: 1px solid #4CAF50;
+    }
+
+    footer{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #d9d9d9;
+    }
+
+    .footer-top{
+    padding: 0 15px;
+    border-bottom: 1px solid #d9d9d9;
+    }
+
+    .footer-bottom{
+        margin-top: 12px;
+        text-align: center;
+    }
+    
+    .footer-bottom ul{
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        list-style: outside none none;
+    }
+
+    .footer-bottom li{
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 8px 16px;
     }
