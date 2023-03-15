@@ -12,6 +12,13 @@
     .heading h2 {
         font-size: 20px;
     }
+    /* Form*/
+    html {
+        font-size:75%;
+    }
+.form >form {
+    width: 100%;
+}
     }
 
     /* Untuk Smartphone */
@@ -55,4 +62,12 @@
         font-size: 14px;
         line-height: 20px;
     }
+
+    /*FORM*/
+    html {
+        font-size:75%;
+    }
+.form >form {
+    width: 100%;
+}
     }
