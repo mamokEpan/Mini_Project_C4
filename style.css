@@ -12,7 +12,7 @@ a {
 }
 
 .clear {
-    clear: left;
+    clear: both;
 }
 
 .container {
@@ -21,6 +21,91 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.main-wrapper {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 65px auto 0;
+}
+
+.main-wrapper p{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 263px auto 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(80, 65, 65, 0.7);
+    border-radius: 5px;
+}
+
+.main-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+    display: none;
+}
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url(Img/apple.jpg);
+    background-size: cover;
+    background-position: 0 10px;
+}
+.item-2 {
+    background: url(Img/asus.jpg);
+    background-size: cover;
+    background-position: 0 -5px;
+}
+.item-3 {
+    background: url(Img/samsung.jpg);
+    background-size: cover;
+}
+.item-4 {
+    background: url(Img/xiaomi.jpg);
+    background-size: cover;
+}
+
+*:target ~ .item-1{
+    opacity: 0;
+}
+#item-1:target ~ .item-1 {
+    opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+} 
 
 .top-wrapper {
     padding: 180px 0 100px 0;
