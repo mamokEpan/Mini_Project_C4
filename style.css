@@ -33,16 +33,21 @@
     .main-wrapper p{
         box-sizing: border-box;
         width: 100%;
-        margin: 263px auto 0;
+        margin: 300px auto 0 ;
+        overflow: auto;
         padding: 20px;
         color: white;
         text-align: center;
         font-size: 16px;
+        line-height: 20px;
         background-color: rgba(80, 65, 65, 0.7);
         border-radius: 5px;
     }
 
     .main-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 0;
         bottom: 0;
