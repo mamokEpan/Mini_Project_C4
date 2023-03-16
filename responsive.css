@@ -1,7 +1,8 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-    .lesson {
-        width: 50%;
+   /*css body responsif*/
+    .tipe-hp{
+        width: 100%;
         margin-bottom: 50px;
     }
     
@@ -45,6 +46,17 @@
     .btn {
         width: 100%;
     }
+    /*css body rsponsif */
+    .tipe-hp{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .hp-ikon{
+        display: block;
+    }
+    /*sampai sini body */
     
     .top-wrapper {
         text-align: center;
