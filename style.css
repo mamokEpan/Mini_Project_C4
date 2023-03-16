@@ -200,57 +200,120 @@ header {
 }
 /**Header by pandu Setyawan Wiyoon**/
 
-/* CSS untuk menu-icon */
-.menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-}
-
-
-.lesson-wrapper {
+/* CSS untuk bagian body by M Ramdhan Qurrota A */
+.daftar-hp{
+    height: 500px;
     padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #36af40;
+    background-color: rgba(238, 116, 116, 0.6);
     text-align: center;
 }
-
-.heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    color: #5f5d60;
+.smartphone {
+    height: 800px;
+    padding-bottom: 10px;
+    background:linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300;
+    text-align: center;
 }
-
-.heading h2 {
-    font-weight: normal;
-}
-
-.lesson {
+.tipe-hp{
     float: left;
-    width: 25%;
+    width: 33.333%;
+   
 }
-
-.lesson-icon {
+.hp-ikon{
     position: relative;
 }
-
-.lesson-icon p {
-    position: absolute;
-    top: 44%;
-    width: 100%;
-    color: white;
+.heading{
+    padding-top: 50px ;
+}
+.heading h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(197, 3, 35);
+    font-size: 20px;
 }
 
-.text-contents {
-    width: 80%;
+.message:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.fullspek{
+    background-color: rgb(255, 251, 235);
+}
+.spek-list{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    width: 1.cm;
+    border-color: rebeccapurple;
+}
+.tipe-hp a{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.harga{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: oblique;
+    color: rgb(32, 46, 129);
+}
+.button{
+    background: rgb(48, 157, 230);
+    border: 2px solid rgba(80, 24, 7, 0.678);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    min-width: 200px;
+    margin: 8px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
     display: inline-block;
-    margin-top: 15px;
-    font-size: 15px;
-    color: #b3aeb5;
+    opacity: 0.8;
 }
+.button:hover{
+    color: rgb(248, 10, 10);
+}
+/* Style untuk Button beli dan lihat lebih lengkap */
+.button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #7be5ff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform:scaleX(0);
+}
+.btn2::before{
+    transform: scaleY(0);
+}
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.btn1:hover::before{
+    transform: scaleY(1);
+}
+
+/*Style untuk teks konten berisi spesifikasi hp*/
+.teks-content{
+    width: 80%;
+    display:inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color:rgb(236, 187, 122);
+    text-align: center;
+}
+.fa{
+    margin-left: 5px;
+}
+/*CSS body by m ramdha qa */
 
 .heading h3 {
     font-weight: normal;
