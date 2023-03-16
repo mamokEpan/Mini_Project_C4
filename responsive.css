@@ -1,6 +1,6 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-   /*css body responsif*/
+    /*css body responsif*/
     .tipe-hp{
         width: 100%;
         margin-bottom: 50px;
@@ -20,6 +20,14 @@
     .form >form {
         width: 100%;
     }
+    .container .fa {
+        display: none !important;
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding: 21px 0;
+    }
+
 }
 
     /* Untuk Smartphone */
@@ -30,7 +38,7 @@
     }
 
     .main-wrapper .main-item p{
-        width: 75%;
+        width: 100%;
         overflow: auto;
         font-size: 14px;
     }
@@ -68,8 +76,12 @@
     }
     
     /* Tambahkan CSS untuk menu-icon */
-    .menu-icon{
-        display: block;
+    .container .fa {
+        display: block !important;
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding: 21px 0;
     }
     
     .top-wrapper h1 {
